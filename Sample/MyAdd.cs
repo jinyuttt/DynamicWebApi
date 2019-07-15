@@ -8,7 +8,7 @@ namespace Sample
    
     public class MyAdd : ICall
     {
-        protected const string BilName = "MM";
+        //protected const string BilName = "MM";
        
         public MyAdd()
         {
@@ -24,6 +24,11 @@ namespace Sample
         public string UserServer()
         {
             return "银行名称";
+        }
+
+        public ResponceKK GetAsyncResult(RequestKK request)
+        {
+            return new ResponceKK();
         }
     }
 }

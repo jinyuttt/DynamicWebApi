@@ -26,6 +26,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using Microsoft.AspNetCore.Routing;
 
 namespace DynamicWebAPIFactory
 {
@@ -274,8 +275,8 @@ namespace DynamicWebAPIFactory
                     AttributeRouteModel = CreateActionRouteModel(version,areaName, controllerName, action.ActionName)
                 };
 
-               // appServiceSelectorModel.ActionConstraints.Add(new HttpMethodActionConstraint(new[] { verb }));
-
+                // appServiceSelectorModel.ActionConstraints.Add(new DefineHttpMethodActionConstraint(new[] { verb }));
+                appServiceSelectorModel.EndpointMetadata.Add(new HttpMethodMetadata(new[] { verb }));
                 action.Selectors.Add(appServiceSelectorModel);
             }
             catch(Exception e)

@@ -21,16 +21,17 @@ namespace Sample
         {
 
             services.AddControllers();
-                //.AddNewtonsoftJson(
-                //options =>
-                //{
-                //    options.SerializerSettings.ContractResolver = new DefaultContractResolver();
-                //    //设置时间格式
-                //    options.SerializerSettings.DateFormatString = "yyyy-MM-dd";
-                //}
-                //);
+            //.AddNewtonsoftJson(
+            //options =>
+            //{
+            //    options.SerializerSettings.ContractResolver = new DefaultContractResolver();
+            //    //设置时间格式
+            //    options.SerializerSettings.DateFormatString = "yyyy-MM-dd";
+            //}
+            //);
 
-            services.AddWebApiAssembly(null);//添加程序集
+            // services.AddWebApiAssembly(null);//添加程序集
+            services.AddWebApiDirectory();
             services.AddDynamicWebApi(new DynamicWebApiOptions() {  ControllerFeature=(P)=> {
                 if (P.GetInterface(typeof(ICall).Name) == null)
                 {

@@ -23,6 +23,8 @@ using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Reflection;
 using System.IO;
+using System.Linq;
+using System.Runtime.Loader;
 
 namespace DynamicWebAPIFactory
 {
@@ -58,7 +60,7 @@ namespace DynamicWebAPIFactory
             AppConsts.FormBodyBindingIgnoredTypes = options.FormBodyBindingIgnoredTypes;
             AppConsts.ControllerMapName = options.ControllerMapName;
             AppConsts.ControllerVersion = options.ControllerVersion;
-          
+            AppConsts.ControllerArea = options.ControllerArea;
             //
             var partManager = services.GetSingletonInstanceOrNull<ApplicationPartManager>();
 
@@ -84,9 +86,9 @@ namespace DynamicWebAPIFactory
         /// 注入控制器程序集
         /// </summary>
         /// <param name="services"></param>
-        /// <param name="dlls">程序集</param>
+        /// <param name="dlls">程序集文件</param>
         /// <returns></returns>
-        public static IServiceCollection AddWebApiAssembly(this IServiceCollection services,string[] dlls)
+        public static IServiceCollection AddWebApiAssemblys(this IServiceCollection services,string[] dlls)
         {
            if(dlls==null||dlls.Length==0)
             {
@@ -100,9 +102,32 @@ namespace DynamicWebAPIFactory
             }
             foreach (string dll in dlls)
             {
-                AssemblyPart part = new AssemblyPart(Assembly.LoadFile(dll));
-                partManager.ApplicationParts.Add(part);
+                services.AddWebApiAssembly(dll);
             }
+            return services;
+        }
+
+        /// <summary>
+        /// 程序集加载
+        /// </summary>
+        /// <param name="services"></param>
+        /// <param name="dlls"></param>
+        /// <returns></returns>
+        public static IServiceCollection AddWebApiAssembly(this IServiceCollection services, string file)
+        {
+            if (file.IsNullOrEmpty())
+            {
+                return services;
+            }
+            var partManager = services.GetSingletonInstanceOrNull<ApplicationPartManager>();
+
+            if (partManager == null)
+            {
+                throw new InvalidOperationException("\"AddDynamicWebApi\" must be after \"AddMvc\".");
+            }
+                AssemblyPart part = new AssemblyPart(AssemblyLoadContext.Default.LoadFromAssemblyPath(file));
+                partManager.ApplicationParts.Add(part);
+            
             return services;
         }
 
@@ -114,7 +139,7 @@ namespace DynamicWebAPIFactory
         /// <param name="dirs">目录</param>
         /// <param name="dllfilter">程序集文件筛选条件,正则表达式</param>
         /// <returns></returns>
-        public static IServiceCollection AddWebApiDirectory(this IServiceCollection services, string[] dirs,string filter=null)
+        public static IServiceCollection AddWebApiDirectory(this IServiceCollection services, string[] dirs=null,string filter=null)
         {
             if(filter==null)
             {
@@ -122,12 +147,15 @@ namespace DynamicWebAPIFactory
             }
             if(dirs==null||dirs.Length==0)
             {
-                return services;
+                dirs = new string[] { AppDomain.CurrentDomain.BaseDirectory };
             }
             foreach(string dir in dirs)
             {
-                string[] file = Directory.GetFileSystemEntries(dir, filter);
-                services.AddWebApiAssembly(file);
+                var files = Directory.EnumerateFiles(dir, filter);
+                foreach (string file in files)
+                {
+                    services.AddWebApiAssembly(file);
+                }
             }
             return services;
         }

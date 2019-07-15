@@ -92,6 +92,12 @@ namespace DynamicWebAPIFactory
         /// 默认：Version
         /// </summary>
         public string ControllerVersion { get; set; }
+
+        /// <summary>
+        /// 控制器所在域设置，根据该名称的常量，静态属性的值
+        /// </summary>
+        public string ControllerArea { get; set; }
+
         /// <summary>
         /// Verify that all configurations are valid
         /// </summary>
