@@ -7,9 +7,7 @@ namespace SampleWebApi
 {
    public interface ICall
     {
-      // public const string version = "";
-
-       //public static string ll;
+     
         string Add();
 
         string UserServer();
