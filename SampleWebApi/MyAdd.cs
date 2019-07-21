@@ -9,7 +9,7 @@ namespace SampleWebApi
     public class MyAdd : ICall
     {
         //protected const string BilName = "MM";
-       
+        const string version = "v2";
         public MyAdd()
         {
 

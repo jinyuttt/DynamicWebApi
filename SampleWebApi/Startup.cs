@@ -27,17 +27,24 @@ namespace SampleWebApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-            services.AddWebApiDirectory();
+            services.AddWebApiDirectory();//添加程序集
+
+            //添加服务扩展
             services.AddDynamicWebApi(new DynamicWebApiOptions()
             {
-                ControllerFeature = (P) => {
+                ControllerFeature = (P) =>
+                {
+
+                    //注入判断为控制器的类，返回true就是控制器
                     if (P.GetInterface(typeof(ICall).Name) == null)
                     {
                         return false;
                     }
                     return true;
                 }
-            });
+                ,
+                ControllerMapName = "NewCotroller"
+            }); ; ;
             services.AddSwaggerDocument();
         }
 
