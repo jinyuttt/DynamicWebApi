@@ -26,9 +26,9 @@
     DynamicWebApiOptions有配置项，原理是根据配置值，查找该值的静态字段，常量，获取对应的值进行替换  
 	例如：  
 	 ControllerVersion = "vserion", 类常量字段  const string version = "v2";   
-	 则路径规则变为：api/v2/控制器名称/方法名称，注意：配置的是字段名称
+	 则路径规则变为：api/v2/控制器名称/方法名称，注意：配置的是字段名称  
 	 同理再例如：  
-	  ControllerMapName = "MapName"，类常量字段  const string  MapName= "NewCotroller"; 
+	  ControllerMapName = "MapName"，类常量字段  const string  MapName= "NewCotroller";   
 	  则路径规则变为：api/NewCotroller/方法名称，此时控制器名称被替换  
 	  
 	  
