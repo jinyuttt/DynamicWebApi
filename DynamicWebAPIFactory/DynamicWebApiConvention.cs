@@ -275,7 +275,7 @@ namespace DynamicWebAPIFactory
                     AttributeRouteModel = CreateActionRouteModel(version,areaName, controllerName, action.ActionName)
                 };
 
-                // appServiceSelectorModel.ActionConstraints.Add(new DefineHttpMethodActionConstraint(new[] { verb }));
+                appServiceSelectorModel.ActionConstraints.Add(new HttpMethodActionConstraint(new[] { verb }));
                 appServiceSelectorModel.EndpointMetadata.Add(new HttpMethodMetadata(new[] { verb }));
                 action.Selectors.Add(appServiceSelectorModel);
             }

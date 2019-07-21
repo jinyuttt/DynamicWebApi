@@ -17,6 +17,7 @@
     <Import Project="$(NuGetPackageRoot)nswag.aspnetcore\13.0.4\build\NSwag.AspNetCore.props" Condition="Exists('$(NuGetPackageRoot)nswag.aspnetcore\13.0.4\build\NSwag.AspNetCore.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgNewtonsoft_Json Condition=" '$(PkgNewtonsoft_Json)' == '' ">C:\Program Files\dotnet\sdk\NuGetFallbackFolder\newtonsoft.json\9.0.1</PkgNewtonsoft_Json>
     <PkgMicrosoft_Extensions_ApiDescription_Server Condition=" '$(PkgMicrosoft_Extensions_ApiDescription_Server)' == '' ">C:\Users\jinyu\.nuget\packages\microsoft.extensions.apidescription.server\0.3.0-preview6.19307.2</PkgMicrosoft_Extensions_ApiDescription_Server>
   </PropertyGroup>
 </Project>

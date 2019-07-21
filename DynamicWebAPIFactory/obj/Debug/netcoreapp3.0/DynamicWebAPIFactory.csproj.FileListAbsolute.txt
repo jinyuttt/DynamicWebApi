@@ -1,0 +1,4 @@
+E:\study\DynamicWebApi\DynamicWebAPIFactory\obj\Debug\netcoreapp3.0\DynamicWebAPIFactory.csprojAssemblyReference.cache
+E:\study\DynamicWebApi\DynamicWebAPIFactory\obj\Debug\netcoreapp3.0\DynamicWebAPIFactory.csproj.CoreCompileInputs.cache
+E:\study\DynamicWebApi\DynamicWebAPIFactory\obj\Debug\netcoreapp3.0\DynamicWebAPIFactory.AssemblyInfoInputs.cache
+E:\study\DynamicWebApi\DynamicWebAPIFactory\obj\Debug\netcoreapp3.0\DynamicWebAPIFactory.AssemblyInfo.cs

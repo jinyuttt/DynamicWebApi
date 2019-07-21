@@ -1,0 +1,8 @@
+E:\study\DynamicWebApi\DynamicControllers\bin\Debug\netcoreapp2.2\DynamicControllersFactory.deps.json
+E:\study\DynamicWebApi\DynamicControllers\bin\Debug\netcoreapp2.2\DynamicControllersFactory.dll
+E:\study\DynamicWebApi\DynamicControllers\bin\Debug\netcoreapp2.2\DynamicControllersFactory.pdb
+E:\study\DynamicWebApi\DynamicControllers\obj\Debug\netcoreapp2.2\DynamicControllersFactory.csproj.CoreCompileInputs.cache
+E:\study\DynamicWebApi\DynamicControllers\obj\Debug\netcoreapp2.2\DynamicControllersFactory.AssemblyInfoInputs.cache
+E:\study\DynamicWebApi\DynamicControllers\obj\Debug\netcoreapp2.2\DynamicControllersFactory.AssemblyInfo.cs
+E:\study\DynamicWebApi\DynamicControllers\obj\Debug\netcoreapp2.2\DynamicControllersFactory.dll
+E:\study\DynamicWebApi\DynamicControllers\obj\Debug\netcoreapp2.2\DynamicControllersFactory.pdb
