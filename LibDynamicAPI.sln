@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29102.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicControllersFactory", "DynamicControllers\DynamicControllersFactory.csproj", "{6BD53078-C2C6-4D64-B016-99D39BFA9F06}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DynamicControllersFactory", "DynamicControllers\DynamicControllersFactory.csproj", "{6BD53078-C2C6-4D64-B016-99D39BFA9F06}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleWebApi", "SampleWebApi\SampleWebApi.csproj", "{C9408615-392D-4B05-B5F5-1E2750C91A85}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleApi", "SampleApi\SampleApi.csproj", "{75D16982-B5B7-47B4-9CDF-0DB1A9685242}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{6BD53078-C2C6-4D64-B016-99D39BFA9F06}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6BD53078-C2C6-4D64-B016-99D39BFA9F06}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6BD53078-C2C6-4D64-B016-99D39BFA9F06}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C9408615-392D-4B05-B5F5-1E2750C91A85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C9408615-392D-4B05-B5F5-1E2750C91A85}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C9408615-392D-4B05-B5F5-1E2750C91A85}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C9408615-392D-4B05-B5F5-1E2750C91A85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75D16982-B5B7-47B4-9CDF-0DB1A9685242}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75D16982-B5B7-47B4-9CDF-0DB1A9685242}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75D16982-B5B7-47B4-9CDF-0DB1A9685242}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75D16982-B5B7-47B4-9CDF-0DB1A9685242}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
