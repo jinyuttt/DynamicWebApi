@@ -1,4 +1,4 @@
-using DynamicWebAPIFactory;
+using DynamicControllersFactory;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -44,7 +44,7 @@ namespace Sample
             //    Title = "MyAPI",
             //    Version = "v1"
             //}));
-             services.AddOpenApiDocument();
+            services.AddOpenApiDocument();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -70,9 +70,9 @@ namespace Sample
             {
                 endpoints.MapControllers();
             });
-          //   app.UseSwagger();
-          //  app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "MyAPI"));
-            app.UseOpenApi().UseSwaggerUi3().UseReDoc();
+            //   app.UseSwagger();
+            //  app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "MyAPI"));
+          app.UseOpenApi().UseSwaggerUi3().UseReDoc();
             
         }
     }

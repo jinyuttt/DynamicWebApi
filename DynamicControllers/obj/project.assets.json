@@ -1,43 +1,47 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.0": {}
+    ".NETCoreApp,Version=v3.1": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.0": []
+    ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
     "C:\\Users\\jinyu\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "d:\\Program Files (x86)\\DevExpress 20.2\\.NET Core Desktop Libraries\\Offline Packages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\study\\DynamicWebApi\\DynamicWebApi\\DynamicControllers\\DynamicControllersFactory.csproj",
+      "projectUniqueName": "E:\\study\\web\\DynamicWebApi\\DynamicControllers\\DynamicControllersFactory.csproj",
       "projectName": "DynamicControllersFactory",
-      "projectPath": "E:\\study\\DynamicWebApi\\DynamicWebApi\\DynamicControllers\\DynamicControllersFactory.csproj",
+      "projectPath": "E:\\study\\web\\DynamicWebApi\\DynamicControllers\\DynamicControllersFactory.csproj",
       "packagesPath": "C:\\Users\\jinyu\\.nuget\\packages\\",
-      "outputPath": "E:\\study\\DynamicWebApi\\DynamicWebApi\\DynamicControllers\\obj\\",
+      "outputPath": "E:\\study\\web\\DynamicWebApi\\DynamicControllers\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "d:\\Program Files (x86)\\DevExpress 20.2\\.NET Core Desktop Libraries\\Offline Packages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
         "C:\\Users\\jinyu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.1.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress .NET Core Desktop 20.2.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "netcoreapp3.0"
+        "netcoreapp3.1"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "d:\\Program Files\\DevExpress 19.1\\Components\\System\\Components\\Packages": {},
+        "d:\\Program Files (x86)\\DevExpress 20.2\\.NET Core Desktop Libraries\\System\\Components\\Packages": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "netcoreapp3.0": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -48,7 +52,8 @@
       }
     },
     "frameworks": {
-      "netcoreapp3.0": {
+      "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "imports": [
           "net461",
           "net462",
@@ -60,11 +65,14 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100-preview9-014004\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-preview.3.21202.5\\RuntimeIdentifierGraph.json"
       }
     }
   }

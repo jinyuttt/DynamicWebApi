@@ -18,16 +18,15 @@
 
 
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ActionConstraints;
 using Microsoft.AspNetCore.Mvc.ApplicationModels;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
-using Microsoft.AspNetCore.Mvc.ActionConstraints;
+using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using Microsoft.AspNetCore.Routing;
-using Microsoft.AspNetCore.Mvc.Internal;
 
 namespace DynamicControllersFactory
 {

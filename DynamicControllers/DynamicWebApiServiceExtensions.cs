@@ -17,14 +17,15 @@
 
 
 
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.ApplicationParts;
-using Microsoft.Extensions.DependencyInjection;
+
 using System;
 using System.Reflection;
 using System.IO;
 using System.Linq;
 using System.Runtime.Loader;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.AspNetCore.Mvc.ApplicationParts;
+using Microsoft.AspNetCore.Mvc;
 
 namespace DynamicControllersFactory
 {

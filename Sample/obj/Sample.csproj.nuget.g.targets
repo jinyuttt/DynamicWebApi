@@ -4,7 +4,6 @@
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
   </PropertyGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)microsoft.extensions.apidescription.server\0.3.0-preview6.19307.2\build\Microsoft.Extensions.ApiDescription.Server.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.extensions.apidescription.server\0.3.0-preview6.19307.2\build\Microsoft.Extensions.ApiDescription.Server.targets')" />
-    <Import Project="$(NuGetPackageRoot)nswag.aspnetcore\13.0.4\build\NSwag.AspNetCore.targets" Condition="Exists('$(NuGetPackageRoot)nswag.aspnetcore\13.0.4\build\NSwag.AspNetCore.targets')" />
+    <Import Project="$(NuGetPackageRoot)nswag.aspnetcore\13.10.9\build\NSwag.AspNetCore.targets" Condition="Exists('$(NuGetPackageRoot)nswag.aspnetcore\13.10.9\build\NSwag.AspNetCore.targets')" />
   </ImportGroup>
 </Project>

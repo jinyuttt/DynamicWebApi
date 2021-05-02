@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29102.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DynamicControllersFactory", "DynamicControllers\DynamicControllersFactory.csproj", "{6BD53078-C2C6-4D64-B016-99D39BFA9F06}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleApi", "SampleApi\SampleApi.csproj", "{75D16982-B5B7-47B4-9CDF-0DB1A9685242}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample", "Sample\Sample.csproj", "{C9522316-0D58-4BD0-B300-81D9FB2C6099}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{6BD53078-C2C6-4D64-B016-99D39BFA9F06}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6BD53078-C2C6-4D64-B016-99D39BFA9F06}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6BD53078-C2C6-4D64-B016-99D39BFA9F06}.Release|Any CPU.Build.0 = Release|Any CPU
-		{75D16982-B5B7-47B4-9CDF-0DB1A9685242}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{75D16982-B5B7-47B4-9CDF-0DB1A9685242}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{75D16982-B5B7-47B4-9CDF-0DB1A9685242}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{75D16982-B5B7-47B4-9CDF-0DB1A9685242}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9522316-0D58-4BD0-B300-81D9FB2C6099}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9522316-0D58-4BD0-B300-81D9FB2C6099}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9522316-0D58-4BD0-B300-81D9FB2C6099}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9522316-0D58-4BD0-B300-81D9FB2C6099}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

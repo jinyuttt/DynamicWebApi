@@ -17,6 +17,7 @@
 
 
 
+
 using Microsoft.AspNetCore.Mvc.Controllers;
 using System;
 using System.Reflection;
@@ -34,7 +35,7 @@ namespace DynamicControllersFactory
         /// <summary>
         /// 判断是否是控制器
         /// </summary>
-        private Func<Type,bool> customFeature = null;
+        private readonly Func<Type,bool> customFeature = null;
 
         /// <summary>
         /// 

@@ -6,3 +6,8 @@ E:\study\DynamicWebApi\DynamicWebApi\DynamicControllers\obj\Debug\netcoreapp3.0\
 E:\study\DynamicWebApi\DynamicWebApi\DynamicControllers\obj\Debug\netcoreapp3.0\DynamicControllersFactory.dll
 E:\study\DynamicWebApi\DynamicWebApi\DynamicControllers\obj\Debug\netcoreapp3.0\DynamicControllersFactory.pdb
 E:\study\DynamicWebApi\DynamicWebApi\DynamicControllers\obj\Debug\netcoreapp3.0\DynamicControllersFactory.csprojAssemblyReference.cache
+E:\study\web\DynamicWebApi\DynamicControllers\obj\Debug\netcoreapp3.0\DynamicControllersFactory.csprojAssemblyReference.cache
+E:\study\web\DynamicWebApi\DynamicControllers\obj\Debug\netcoreapp3.0\DynamicControllersFactory.GeneratedMSBuildEditorConfig.editorconfig
+E:\study\web\DynamicWebApi\DynamicControllers\obj\Debug\netcoreapp3.0\DynamicControllersFactory.AssemblyInfoInputs.cache
+E:\study\web\DynamicWebApi\DynamicControllers\obj\Debug\netcoreapp3.0\DynamicControllersFactory.AssemblyInfo.cs
+E:\study\web\DynamicWebApi\DynamicControllers\obj\Debug\netcoreapp3.0\DynamicControllersFactory.csproj.CoreCompileInputs.cache
