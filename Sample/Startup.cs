@@ -73,7 +73,7 @@ namespace Sample
             //   app.UseSwagger();
             //  app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "MyAPI"));
           app.UseOpenApi().UseSwaggerUi3().UseReDoc();
-            
+          app.UseCors(options => options.AllowAnyOrigin());
         }
     }
 }

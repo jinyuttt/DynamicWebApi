@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Sample
 {
-    public class MyDefineName:Attribute
+    public class MyDefineName : Attribute
     {
         private string Name;
         public MyDefineName(string name)
