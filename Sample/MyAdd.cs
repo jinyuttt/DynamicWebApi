@@ -1,12 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Sample
 {
-   
+
     public class MyAdd : ICall
     {
         //protected const string BilName = "MM";

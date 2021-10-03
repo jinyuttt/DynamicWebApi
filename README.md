@@ -1,11 +1,9 @@
-# DynamicWebApi
+# DynamicWebApi  
 动态创建WebApi  
 将一般类快速部署为WEBRPC(webapi)
 
 -------------------------------------------------
-程序升级：升级netcore3.1  
- 因为Microsoft.AspNetCore.Mvc.Core库没有在nuget单独提供，所以修改了开发类型
--------------------------------------------------
+
 使用方法： 
 1.安装库 DynamicControllersFactory   
 2.在webapi服务中添加扩展  
